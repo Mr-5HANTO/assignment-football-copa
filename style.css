@@ -1,0 +1,249 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/* navigation */
+header{
+    background-color: #2d25a0;
+    padding: 42px 156px;
+}
+nav{
+    display: flex;
+    justify-content: space-between; 
+}
+nav a{
+   color: #FFFFFF;
+   text-decoration: none;
+   padding-left: 36px;
+   font-size: 16px;
+   font-weight: 500;
+}
+#laptop-none{
+    display: none;
+}
+.watch-now{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+.fa-sign-in-alt, .fa-arrow-right{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav a:nth-child(1){
+    padding-left: 0px;
+}
+.Conmebol{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.conmebol-live{
+    width: 485px;
+    margin-right: 50px;
+}
+.conmebol-live h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/* main section */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    margin-top: 50px;
+
+}
+/* -------------------------top-players
+------------------------------------------------------ */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    Width: 300px;
+    Height: 474px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgb(201, 191, 191);
+}
+.player h1{
+    color: #18191F;
+    font-size: 28px;
+}
+.player p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+
+/* -----------------------
+Copa America 
+------------------------------ */
+.copa-america-2021{
+    display: flex;
+    justify-content: space-between;
+}
+.copa-america{
+    width: 469px;
+}
+.copa-america h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #0A0826;
+}
+.copa-america p{
+   font-size: 16px;
+   color: #6C6C6C;
+}
+
+.copa-america-pic{
+    Width: 567px;
+    Height:427px;
+}
+           /* ----------------------
+                        footer
+           ---------------------------- */
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
+footer i{
+    color:#969BAB;
+    background-color: rgba(11, 13, 23, 0.1);
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 50%;
+}
+footer p{
+    font-size: 18px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------
+For mobile phones:
+----------------------*/
+@media only screen and (max-width: 768px) {
+    
+    body{
+        width: 100%;
+        height: auto;
+    }
+        /* navigation */
+        .watch-now{
+            padding: 7px 10px;
+        }
+    header{
+        padding:0;
+    }
+   
+    .container{
+        width: 100%;
+        margin-top: 50px;
+    
+    }
+    .display-none{
+        display: none;
+    }
+    #laptop-none{
+        display: block;
+    }
+    .Conmebol{
+        display: flex;
+        flex-direction: column;
+    }
+   .conmebol-logo img{
+       width: 329px;
+       height: 259px;
+   }
+    .conmebol-live{
+        width: 278px;
+        margin-right: 0px;
+    }
+    .conmebol-live h1{
+        font-size: 36px;
+    }
+    /* --------------------------players
+------------------------------------------------------ */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 0;
+        grid-column-gap: 0px;
+
+        }
+
+        .player{
+            Width: 300px;
+            Height: 474px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px rgb(201, 191, 191);
+        }
+        .player img{
+            width: 300px;
+            height: 256px;
+        }
+     
+
+                /* -----------------------
+        Copa America 2021
+        ------------------------------ */
+        .copa-america-2021{
+            display: flex;
+            flex-direction: column;
+        }
+        .copa-america{
+            width: 100%;
+        }
+        .copa-america h1{
+            font-size: 30px;
+        }
+
+        .copa-america-pic{
+            Width: 328px;
+            Height: 248px;
+        }
+        .copa-america-pic img{
+            Width: 328px;
+            Height: 248px;
+        }
+
+                  /* ----------------------
+                        footer
+           ---------------------------- */
+        footer{
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer img{
+            width: 250px;
+            height: 63px;
+        }
+  }
